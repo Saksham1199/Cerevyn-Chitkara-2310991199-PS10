@@ -1,0 +1,166 @@
+{
+  "description": "A scripted player. offsetMs is the time after symbol onset at which the key is pressed. Targets #3 and #7 are missed; non-targets #3 and #10 get a false alarm.",
+  "seed": 20261020,
+  "actions": [
+    {
+      "trialIndex": 0,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 1,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 2,
+      "press": true,
+      "offsetMs": 250
+    },
+    {
+      "trialIndex": 3,
+      "press": true,
+      "offsetMs": 280
+    },
+    {
+      "trialIndex": 4,
+      "press": true,
+      "offsetMs": 305
+    },
+    {
+      "trialIndex": 5,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 6,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 7,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 8,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 9,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 10,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 11,
+      "press": true,
+      "offsetMs": 250
+    },
+    {
+      "trialIndex": 12,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 13,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 14,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 15,
+      "press": true,
+      "offsetMs": 355
+    },
+    {
+      "trialIndex": 16,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 17,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 18,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 19,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 20,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 21,
+      "press": true,
+      "offsetMs": 380
+    },
+    {
+      "trialIndex": 22,
+      "press": true,
+      "offsetMs": 405
+    },
+    {
+      "trialIndex": 23,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 24,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 25,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 26,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 27,
+      "press": false,
+      "offsetMs": 0
+    },
+    {
+      "trialIndex": 28,
+      "press": true,
+      "offsetMs": 455
+    },
+    {
+      "trialIndex": 29,
+      "press": true,
+      "offsetMs": 480
+    }
+  ],
+  "expected": {
+    "targetCount": 9,
+    "nonTargetCount": 21,
+    "hits": 7,
+    "misses": 2,
+    "falseAlarms": 2,
+    "correctWithholds": 19,
+    "targetAccuracyPct": 77.8,
+    "medianRtMs": 380
+  }
+}

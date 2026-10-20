@@ -1,0 +1,55 @@
+
+ RUN  v5.0.5 /home/claude/cerevyn-ps10-attention-game
+
+ ✓ tests/ui.test.tsx > UI flow > shows the intro, then a practice round labelled "not scored" 58ms
+ ✓ tests/ui.test.tsx > UI flow > scores a hit, ignores a second press and a held-down key, and logs each decision 136ms
+ ✓ tests/ui.test.tsx > UI flow > pause freezes the game, and resume continues it 36ms
+ ✓ tests/ui.test.tsx > UI flow > restart in the middle of a trial resets progress and discards the old session 125ms
+ ✓ tests/ui.test.tsx > UI flow > finishes with a summary, saves the result anonymously, and exports JSON 83ms
+ ✓ tests/rng-sequence.test.ts > mulberry32 > produces the same numbers for the same seed 2ms
+ ✓ tests/rng-sequence.test.ts > mulberry32 > produces different numbers for different seeds and stays in [0, 1) 26ms
+ ✓ tests/rng-sequence.test.ts > generateSequence > creates 30 trials with exactly 9 targets at 30% frequency 2ms
+ ✓ tests/rng-sequence.test.ts > generateSequence > is reproducible: same seed => identical sequence, different seed => different order 1ms
+ ✓ tests/rng-sequence.test.ts > generateSequence > uses the target symbol only for targets 2ms
+ ✓ tests/rng-sequence.test.ts > generateSequence > rejects invalid input 1ms
+ ✓ tests/storage.test.ts > result storage > saves and loads results (round trip) 3ms
+ ✓ tests/storage.test.ts > result storage > survives corrupted storage instead of crashing 1ms
+ ✓ tests/storage.test.ts > result storage > reports failure (does not throw) when storage refuses writes 0ms
+ ✓ tests/storage.test.ts > result storage > keeps only the most recent MAX_STORED sessions 5ms
+ ✓ tests/storage.test.ts > result storage > clear() removes everything 2ms
+ ✓ tests/storage.test.ts > JSON export > has a stable shape, a disclaimer, and only anonymous fields 1ms
+ ✓ tests/session.test.ts > scoring: the four outcomes > correct target response (hit) measures reaction time from symbol onset 3ms
+ ✓ tests/session.test.ts > scoring: the four outcomes > missed target: no response by the end of the window 1ms
+ ✓ tests/session.test.ts > scoring: the four outcomes > non-target response is a false alarm 0ms
+ ✓ tests/session.test.ts > scoring: the four outcomes > withholding on a non-target is a correct withhold 0ms
+ ✓ tests/session.test.ts > event handling > ignores auto-repeated key events (key held down) 1ms
+ ✓ tests/session.test.ts > event handling > allows only ONE scored response per trial 0ms
+ ✓ tests/session.test.ts > event handling > ignores responses outside the scoring window (before the first onset and in the gap) 0ms
+ ✓ tests/session.test.ts > event handling > ignores responses before start, and after the session has finished 0ms
+ ✓ tests/session.test.ts > event handling > a late response (after window end) cannot rescue a missed target 1ms
+ ✓ tests/session.test.ts > pause > excludes paused time from the reaction time 0ms
+ ✓ tests/session.test.ts > pause > does not let a response window expire while paused 0ms
+ ✓ tests/session.test.ts > pause > ignores responses while paused 0ms
+ ✓ tests/session.test.ts > pause > hides the symbol while paused 0ms
+ ✓ tests/session.test.ts > timeline and robustness > shows the symbol only for stimulusMs after onset 0ms
+ ✓ tests/session.test.ts > timeline and robustness > finishes after the last window and never runs a trial twice 0ms
+ ✓ tests/session.test.ts > timeline and robustness > clamps timestamps that go backwards (clock never runs in reverse) 0ms
+ ✓ tests/controller.test.ts > GameController: restart discards the old session > gives every (re)start a new session id and a clean slate 4ms
+ ✓ tests/controller.test.ts > GameController: restart discards the old session > drops events that still carry the old session id 1ms
+ ✓ tests/controller.test.ts > GameController: restart discards the old session > a pending timer from the old game cannot change the new game 3ms
+ ✓ tests/controller.test.ts > GameController: restart discards the old session > restarting while paused starts a running session again 1ms
+ ✓ tests/scenario.test.ts > fixtures (sample_data/) > the seeded sequence matches the committed expected sequence 5ms
+ ✓ tests/scenario.test.ts > fixtures (sample_data/) > a full scripted session produces the hand-computed expected summary 3ms
+ ✓ tests/scenario.test.ts > fixtures (sample_data/) > a perfect player scores 100% target accuracy with zero false alarms 1ms
+ ✓ tests/scenario.test.ts > fixtures (sample_data/) > a player who never responds misses every target and withholds correctly on all others 1ms
+ ✓ tests/stats.test.ts > median > handles odd, even and empty lists 2ms
+ ✓ tests/stats.test.ts > median > does not mutate its input 1ms
+ ✓ tests/stats.test.ts > summarise > counts outcomes and computes target accuracy, false alarms, misses and median RT 1ms
+ ✓ tests/stats.test.ts > summarise > returns null RT / accuracy when there is nothing to average 0ms
+
+ Test Files  7 passed (7)
+      Tests  45 passed (45)
+   Start at  13:27:03
+   Duration  2.54s (environment 47%, tests 35%, import 11%, transform 5%, worker 2%)
+
+
