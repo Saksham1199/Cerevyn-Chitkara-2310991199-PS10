@@ -101,7 +101,7 @@ Exact versions are pinned in `package-lock.json`. No model downloads or external
 
 The complete local test output is in [`docs/test-output.txt`](docs/test-output.txt). CI runs the same steps on
 every push (`.github/workflows/ci.yml`): `npm ci`, typecheck, tests, build.
-CI run link: `<PASTE YOUR GITHUB ACTIONS RUN LINK AFTER YOUR FIRST PUSH>`
+CI run link: `https://github.com/Saksham1199/Cerevyn-Chitkara-2310991199-PS10/actions/runs/39396104840`
 
 ## Sample data and expected outputs (`sample_data/`)
 
